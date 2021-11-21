@@ -1,0 +1,13 @@
+.logo{
+    text-decoration: none;
+  
+  &__web {
+    color: $accent-color;
+    @extend %logo-text;
+  }
+
+  &__studio {
+    color: #000000;
+    @extend %logo-text;
+  }
+}
