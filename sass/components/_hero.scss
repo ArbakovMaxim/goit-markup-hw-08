@@ -1,0 +1,68 @@
+.hero {
+    padding-bottom: 0px;
+    text-align: center;
+    max-width: 480px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4) ),
+        url(../images/hero-fon-min.jpg);
+    background-color: #c4c4c4;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and(min-width:768px) {
+        max-width: 768px;
+        height: 400px;
+    }
+
+    @media screen and(min-width:1200px) {
+        max-width: 1600px;
+        height: 600px;
+    }
+
+
+    &__title {
+        color: $color-white;
+      
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        @media screen and(min-width:1200px){
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+        }
+
+    }
+
+    &__blok {
+        padding-top: 118px;
+        padding-bottom: 118px;
+
+        @media screen and(min-width:1200px) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+    
+      }
+
+    &__button {
+        
+        display: inline-block;
+        min-width: 200px;
+        height: 50px;
+        margin-top: 30px;
+      
+        @extend %btn;
+        @extend %btn-text;
+        padding: 10px 32px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      }
+  }

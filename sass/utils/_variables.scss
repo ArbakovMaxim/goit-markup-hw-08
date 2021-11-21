@@ -55,13 +55,14 @@ ul {
 }
 
 .section {
-
-   &:not(first-child) {
-     padding-top: 60px;
-    }
+  padding-top: 60px;
 
   @media screen and (min-width: 1200px) {
     padding: 94px 0px;
+  }
+
+    &:first-child {
+    padding-top: 0px;
   }
 }
 
