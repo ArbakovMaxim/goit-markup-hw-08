@@ -93,7 +93,7 @@ ul {
 
 .header__mob--menu {
   position: absolute;
-  width: 480px;
+  width: 100%;
   height: 796px;
   top: 0;
   left: 0;
@@ -101,7 +101,6 @@ ul {
 }
 
 .menu-button {
-  display: inline-flex;
   padding: 0;
   border: 0;
   border-color: #ffffff;
