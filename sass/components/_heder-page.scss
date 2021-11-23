@@ -20,7 +20,7 @@
   top: 0;
   left: 0;
   text-align: center;
-  background-color: #fff;
+  background-color:#ffffff;
   transform: translateX(-100%);}
 
   
@@ -65,8 +65,9 @@
     }
 }
 
-&__link {
+&__link { 
   @extend %header__link;
+  color: $title-text-color;
   font-size: 40px;
   line-height: 1.175;
   @media screen and(min-width:768px){
@@ -93,7 +94,6 @@
   display: flex;
   flex-direction: column-reverse;
   text-align: left;
-  margin-top: 300px;
   margin-left: 40px;}
 
 @media screen and(min-width:768px){
@@ -109,20 +109,17 @@ margin-left: auto;
 
 &__link--contakt {
     @extend %header__link;
+ /*    font-size: 34px;
+    line-height: 1.176; */
 
     @media screen and (max-width:767px) {
       font-size: 24px;
       line-height: 1.16px;
-    
-      color: $primer-text-color;
-    }
+      color: $primer-text-color;}
 
-    font-size: 34px;
-    line-height: 1.176;
     @media screen and(min-width:768px){
     font-size: 12px;
     line-height: 1.1666;
-
     color: $primer-text-color;
     align-items: center;
     padding-top: 0;
@@ -134,12 +131,7 @@ margin-left: auto;
       font-size: 14px;
       line-height: 1.14;
       padding-top: 32px;
-      padding-bottom: 32px; 
-
-    }
-
-  
-
+      padding-bottom: 32px;}
 
     &:hover,
     &:focus{
@@ -153,12 +145,8 @@ margin-left: auto;
         font-weight: 500;
         font-size: 34px;
         line-height: 1.17;
-
         letter-spacing: 0.02em;
-
-        color: $accent-color;
-
-      }
+        color: $accent-color;}
     }
 }
 
@@ -193,7 +181,6 @@ margin-left: auto;
   position: relative;
   color: $accent-color;
 
-
     &::after {
   @media screen and(min-width:768px){
   position: absolute;
@@ -202,17 +189,17 @@ margin-left: auto;
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: $accent-color;}}
+  background-color: $accent-color;}
+}
 }
 }
 
 &__studio {
   @media screen and(min-width:768px){
   position: relative;
-  color:$accent-color;
+  color:$accent-color;}
 
-
-   &::after {
+  &::after {
   @media screen and(min-width:768px){
   position: absolute;
   bottom: -1px;
@@ -220,10 +207,15 @@ margin-left: auto;
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: $focys-hover-color;}}
+  background-color: $focys-hover-color;}
 }
 }
 
+&__mob-menu{
+  @media screen and(max-width:767px){
+    position:absolute;
+    bottom: 0;}
+}
 }
 
 .menu-button{
@@ -234,9 +226,7 @@ margin-left: auto;
     margin:10px 0;
 
     @media screen and(min-width:768px) {
-      display: none;
-    }
-
+      display: none;}
   }
 
   .header__mob--menu.is-open{
@@ -255,12 +245,8 @@ margin-left: auto;
     margin-right: 15px;
 
     @media screen and(min-width:768px) {
-      display: none;
-    }
-
+      display: none;}
   }
-
-
 
 .logo--header{
 
@@ -268,9 +254,8 @@ margin-left: auto;
     margin: 16px auto 16px 0px;}
 
     @media screen and(min-width:768px){
-      margin: 26px 88px 26px 0;
-    }
+      margin: 26px 88px 26px 0;}
+
     @media screen and(min-width:1200px){
-      margin: 24px 93px 25px 0;
-    }
+      margin: 24px 93px 25px 0;}
 }

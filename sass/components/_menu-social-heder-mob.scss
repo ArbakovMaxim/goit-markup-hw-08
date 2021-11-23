@@ -1,0 +1,38 @@
+.menu-social{
+    @media screen and(max-width:767px){
+      margin-top: 64px;
+      margin-left: 40px;
+    }
+  
+    @media screen and(min-width:768px){
+    display: none;
+    }
+  
+  
+  &__network{
+    display: flex;
+    @extend %header__link; 
+    font-size: 18px;
+    line-height: 1.2;
+    color: $accent-color 
+  }
+  
+  &__item{
+    margin-bottom: 48px;
+  
+  }
+  
+    &__link{
+    text-decoration: none;
+    padding: 0 10px;
+    color: $accent-color; 
+    border-right: 1px solid rgba(33, 33, 33, 0.2);}
+  
+    &__link--first {
+    padding-left: 0;
+    }
+    &__link--last {
+    padding-right: 0;
+    border-right: 0;
+    }
+    }

@@ -86,7 +86,7 @@ ul {
 }
 
 /*  heder-link */
-.header__link, .header__link--contakt, .header__mail {
+.header__link, .header__link--contakt, .header__mail, .menu-social__network {
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -116,7 +116,7 @@ ul {
     top: 0;
     left: 0;
     text-align: center;
-    background-color: #fff;
+    background-color: #ffffff;
     transform: translateX(-100%);
   }
 }
@@ -171,6 +171,7 @@ ul {
 }
 
 .header__link {
+  color: #212121;
   font-size: 40px;
   line-height: 1.175;
 }
@@ -196,7 +197,6 @@ ul {
     display: flex;
     flex-direction: column-reverse;
     text-align: left;
-    margin-top: 300px;
     margin-left: 40px;
   }
 }
@@ -216,8 +216,8 @@ ul {
 }
 
 .header__link--contakt {
-  font-size: 34px;
-  line-height: 1.176;
+  /*    font-size: 34px;
+    line-height: 1.176; */
 }
 
 @media screen and (max-width: 767px) {
@@ -327,7 +327,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header__studio::after {
     position: absolute;
     bottom: -1px;
@@ -336,6 +336,13 @@ ul {
     height: 4px;
     border-radius: 2px;
     background-color: #2196f3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__mob-menu {
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -391,6 +398,46 @@ ul {
   .logo--header {
     margin: 24px 93px 25px 0;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-social {
+    margin-top: 64px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-social {
+    display: none;
+  }
+}
+
+.menu-social__network {
+  display: flex;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #2196f3;
+}
+
+.menu-social__item {
+  margin-bottom: 48px;
+}
+
+.menu-social__link {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #2196f3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-social__link--first {
+  padding-left: 0;
+}
+
+.menu-social__link--last {
+  padding-right: 0;
+  border-right: 0;
 }
 
 .logo {
