@@ -27,10 +27,17 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
   
-    width: 528px;
-    height: 581px;
     background-color: $color-white;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width:1200px){
+      width: 528px;
+      height: 581px;}
+
+    @media screen and (min-width:480px){
+      width: 450px;
+      height: 609px;
+    }  
   }
   
   .backdrop.is-hidden {
