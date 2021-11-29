@@ -109,10 +109,8 @@ margin-left: auto;
 
 &__link--contakt {
     @extend %header__link;
- /*    font-size: 34px;
-    line-height: 1.176; */
 
-    @media screen and (max-width:767px) {
+    @media screen and (min-width:480px) {
       font-size: 24px;
       line-height: 1.16px;
       color: $primer-text-color;}
@@ -141,7 +139,7 @@ margin-left: auto;
 }
 
     &-tel{
-      @media screen and (max-width:767px){
+      @media screen and (min-width:480px){
         font-weight: 500;
         font-size: 34px;
         line-height: 1.17;

@@ -281,12 +281,7 @@ ul {
   }
 }
 
-.header__link--contakt {
-  /*    font-size: 34px;
-    line-height: 1.176; */
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .header__link--contakt {
     font-size: 24px;
     line-height: 1.16px;
@@ -322,7 +317,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .header__link--contakt-tel {
     font-weight: 500;
     font-size: 34px;
@@ -1226,17 +1221,15 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    height: 581px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
   }
 }
 
@@ -1276,15 +1269,16 @@ ul {
   margin: 12px 40px 20px 40px;
 }
 
-@media screen and (min-width: 1200px) {
-  .form {
-    width: 448px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .form {
     width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 448px;
+    height: 581px;
   }
 }
 
@@ -1296,6 +1290,13 @@ ul {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+  margin-top: 40px;
+}
+
+@media screen and (max-whight: 1199px) {
+  .form__text {
+    line-height: 1.5;
+  }
 }
 
 .form__label {
@@ -1356,7 +1357,8 @@ ul {
   height: 50px;
   cursor: pointer;
   margin-top: 30px;
-  margin-left: 124px;
+  margin-left: auto;
+  margin-right: auto;
   background: #188CE8;
   border: 0;
   border-radius: 4px;
@@ -1403,10 +1405,22 @@ ul {
 
 .checkbox__text {
   display: flex;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (max-width: 1199px) {
+  .checkbox__text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox.checkbox__agreement {

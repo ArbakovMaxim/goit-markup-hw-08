@@ -253,12 +253,7 @@ ul {
   }
 }
 
-.header__link--contakt {
-  /*    font-size: 34px;
-    line-height: 1.176; */
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .header__link--contakt {
     font-size: 24px;
     line-height: 1.16px;
@@ -294,7 +289,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .header__link--contakt-tel {
     font-weight: 500;
     font-size: 34px;
