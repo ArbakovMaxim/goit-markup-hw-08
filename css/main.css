@@ -10,6 +10,12 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 input,
 body,
 h1,
@@ -85,7 +91,6 @@ ul {
   letter-spacing: 0.03em;
 }
 
-/*  heder-link */
 .header__link, .header__link--contakt, .header__mail, .menu-social__network {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -281,7 +286,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .header__link--contakt {
     font-size: 24px;
     line-height: 1.16px;
@@ -317,6 +322,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header__link--contakt-tel {
+    color: #2196f3;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .header__link--contakt-tel {
     font-weight: 500;
@@ -324,6 +335,13 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__link--contakt-tel {
+    font-size: 12px;
+    line-height: 1.166;
   }
 }
 
@@ -476,9 +494,14 @@ ul {
 
 .menu-social__network {
   display: flex;
-  font-size: 18px;
   line-height: 1.2;
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .menu-social__network {
+    font-size: 18px;
+  }
 }
 
 .menu-social__item {
@@ -487,9 +510,20 @@ ul {
 
 .menu-social__link {
   text-decoration: none;
-  padding: 0 10px;
   color: #2196f3;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+@media screen and (min-width: 480px) {
+  .menu-social__link {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .menu-social__link {
+    padding: 0 3px;
+  }
 }
 
 .menu-social__link--first {
@@ -814,6 +848,11 @@ ul {
   .team__foto:last-child {
     margin-bottom: 0;
   }
+}
+
+.team__img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team__text {
