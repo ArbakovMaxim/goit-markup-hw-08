@@ -645,6 +645,12 @@ ul {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .positive-features {
+    padding-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .positive-features__item {
     display: flex;
