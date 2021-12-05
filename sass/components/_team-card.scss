@@ -1,11 +1,12 @@
 .team{
     background-color: $primary-bg-color;
 
+
     &__container{
         background-color: $primary-bg-color;
         @media screen and(max-width:1199px) {
         padding-bottom: 60px;}
-}
+        }
 
     &__development{
         @extend %heading-sechion;

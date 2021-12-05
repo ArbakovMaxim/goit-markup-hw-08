@@ -705,6 +705,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .positive-features__paragraph--mob {
+    margin-bottom: 0;
+  }
+}
+
 .positive-features__svg {
   width: 70px;
   height: 70px;
