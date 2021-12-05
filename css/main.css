@@ -181,6 +181,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .header__mob--menu {
+    z-index: 20;
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -334,7 +335,6 @@ ul {
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: #2196f3;
   }
 }
 
