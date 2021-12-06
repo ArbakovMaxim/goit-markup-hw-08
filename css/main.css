@@ -57,7 +57,7 @@ ul {
 }
 
 .section {
-  padding-top: 60px;
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -307,12 +307,12 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .header__link--contakt {
-    font-size: 14px;
-    line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -342,6 +342,13 @@ ul {
   .header__link--contakt-tel {
     font-size: 12px;
     line-height: 1.166;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .header__link--contakt-tel {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -559,7 +566,7 @@ ul {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-mob-480-1x.jpg);
     background-color: #c4c4c4;
-    max-width: 480px;
+    background-repeat: no-repeat;
     height: 400px;
     background-size: 480px 400px;
   }
@@ -639,10 +646,6 @@ ul {
   margin-top: 30px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.positive-features {
-  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -827,17 +830,24 @@ ul {
 }
 
 @media screen and (max-width: 1199px) {
-  .team__container {
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
   .team__development {
     font-size: 28px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__development {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__development {
+    margin-bottom: 50px;
   }
 }
 
@@ -913,6 +923,12 @@ ul {
   margin-top: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .team__foto--tab {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .social {
     padding-top: 16px;
@@ -964,6 +980,12 @@ ul {
 }
 
 @media screen and (max-width: 1199px) {
+  .client {
+    padding-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .client__container {
     padding-left: 0;
     padding-right: 0;
@@ -972,6 +994,7 @@ ul {
 
 @media screen and (max-width: 1199px) {
   .client__text {
+    margin-bottom: 15px;
     font-size: 28px;
     line-height: 1.18;
     text-align: center;
@@ -982,12 +1005,6 @@ ul {
 .client__block {
   display: flex;
   flex-wrap: wrap;
-}
-
-@media screen and (min-width: 768px) {
-  .client__block {
-    margin-bottom: 37px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1031,17 +1048,16 @@ ul {
   outline: none;
 }
 
-@media screen and (max-width: 767px) {
-  .client__item {
-    width: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
-  }
-}
-
 @media screen and (max-width: 1199px) {
   .client__item {
     width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .client__item {
+    width: calc((100% - 2 * 30px) / 2);
   }
 }
 
@@ -1165,7 +1181,6 @@ ul {
 }
 
 .footer__email {
-  width: 358px;
   height: 50px;
   margin-right: 10px;
   padding-left: 16px;
@@ -1177,13 +1192,13 @@ ul {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .footer__email {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .footer__email {
     width: 450px;
   }
@@ -1513,12 +1528,15 @@ ul {
   }
 }
 
+.checkbox__agreement {
+  color: #2196F3;
+}
+
 .checkbox.checkbox__agreement {
   padding-left: 5px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-  color: #2196F3;
 }
 /*# sourceMappingURL=main.css.map */
