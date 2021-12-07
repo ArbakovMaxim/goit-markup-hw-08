@@ -1,18 +1,10 @@
 .client{
-    @media screen and(max-width:1199px) {
-        padding-bottom: 45px;}
-
-    &__container {
-        @media screen and(max-width:1199px) {
-        padding-left: 0;
-        padding-right: 0;}
-    }
 
     &__text{
         @extend %heading-sechion;
         
         @media screen and(max-width:1199px) {
-            margin-bottom: 15px;
+            margin-bottom: 30px;
             font-size: 28px;
             line-height: 1.18;
             text-align: center;
@@ -20,11 +12,13 @@
             }
 
     &__block {
+        margin: -15px;
         display: flex;
         flex-wrap: wrap;
 
         @media screen and(min-width:1200px){
             justify-content: space-between;
+            margin: 0;
         }
       }
 
@@ -62,7 +56,7 @@
     &__item{
 
         @media screen and (max-width:1199px) {
-        width: calc((100% - 3 * 30px) / 3);
+        width: calc((100% - 90px) / 3);
         margin: 15px;}
 
         @media screen and (max-width:767px){
