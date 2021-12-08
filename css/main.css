@@ -689,9 +689,6 @@ ul {
 
 .positive-features__paragraph {
   margin-bottom: 30px;
-  /*         &--mob{
-          @media screen and (max-width: 767px){
-              margin-bottom: 0;}} */
 }
 
 @media screen and (min-width: 768px) {
@@ -704,6 +701,12 @@ ul {
 @media screen and (min-width: 1200px) {
   .positive-features__paragraph {
     width: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .positive-features__paragraph--mob {
+    margin-bottom: 0;
   }
 }
 
